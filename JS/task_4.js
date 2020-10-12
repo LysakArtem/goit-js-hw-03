@@ -1,19 +1,14 @@
 "use strict"
 
-
-
 const countTotalSalary = function(employees) {
-    const employeeNames = Object.keys(employees);
-    let totalSalary= 0;
-    for(const name of employeeNames ){
-        totalSalary+=employees[name];
-    }
-    return totalSalary;
-  };
+  const employeeSalary = Object.values(employees);
+  let totalSalary = 0;
+  for(const salary of employeeSalary){
+    totalSalary += salary;
+  }
+  return totalSalary;
+};
   
-
-
-
   /*
    * Вызовы функции для проверки работоспособности твоей реализации.
    */

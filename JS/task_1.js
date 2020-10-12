@@ -7,11 +7,11 @@ const user = {
     premium: true,
   };
 
-  user.mood= 'happy';
+  user.mood = 'happy';
   user.hobby = 'skydiving';
-  user.premium= false;
+  user.premium = false;
 
 const keys = Object.keys(user);
-for(const key of keys){
+for(const key of keys) {
     console.table(`${key}: ${user[key]}`)
 }

@@ -1,23 +1,18 @@
-
 "use strict"
 
 const findBestEmployee = function(employees) {
-    const employeeNames = Object.keys(employees);
-    let mostOfTasks= 0;
-    let BestEmployee;
-    for(const name of employeeNames ){
-        if(employees[name]>mostOfTasks){
-            mostOfTasks=employees[name];
-             BestEmployee= name;
-        }
+  const employeeNames = Object.keys(employees);
+  let mostOfTasks = 0;
+  let BestEmployee;
+  for(const name of employeeNames){
+    if(employees[name] > mostOfTasks){
+      mostOfTasks = employees[name];
+      BestEmployee = name;
     }
-    return BestEmployee;
-  };
+  }
+  return BestEmployee;
+};
   
-
-
-
-
   /*
    * Вызовы функции для проверки работоспособности твоей реализации.
    */
